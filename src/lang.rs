@@ -139,7 +139,6 @@ pub fn translate_locale(name: String, locale: &str) -> String {
         "lt" => lt::T.deref(),
         "lv" => lv::T.deref(),
         "ar" => ar::T.deref(),
-        "en" => en::T.deref(),
         _ => ko::T.deref(),
     };
     let (name, placeholder_value) = extract_placeholder(&name);
