@@ -95,7 +95,7 @@ pub fn translate_locale(name: String, locale: &str) -> String {
         }
     }
     if lang.is_empty() {
-        lang = ko
+        lang = "ko"
             .split("-")
             .next()
             .map(|x| x.split("_").next().unwrap_or_default())
