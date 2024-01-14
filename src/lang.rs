@@ -124,7 +124,6 @@ pub fn translate_locale(name: String, locale: &str) -> String {
         "vn" => vn::T.deref(),
         "pl" => pl::T.deref(),
         "ja" => ja::T.deref(),
-        "ko" => ko::T.deref(),
         "kz" => kz::T.deref(),
         "ua" => ua::T.deref(),
         "fa" => fa::T.deref(),
@@ -140,7 +139,7 @@ pub fn translate_locale(name: String, locale: &str) -> String {
         "lv" => lv::T.deref(),
         "ar" => ar::T.deref(),
         "en" => en::T.deref(),
-        ko => ko::T.deref(),
+        _ => ko::T.deref(),
     };
     let (name, placeholder_value) = extract_placeholder(&name);
     let replace = |s: &&str| {
@@ -152,8 +151,8 @@ pub fn translate_locale(name: String, locale: &str) -> String {
     };
     if let Some(v) = m.get(&name as &str) {
         if v.is_empty() {
-            if lang != "en" {
-                if let Some(v) = en::T.get(&name as &str) {
+            if lang != "ko" {
+                if let Some(v) = ko::T.get(&name as &str) {
                     return replace(v);
                 }
             }
