@@ -307,7 +307,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Turned off", ""),
         ("In privacy mode", ""),
         ("Out privacy mode", ""),
-        ("Language", ""),
+        ("Language", "ko"),
         ("Keep RustDesk background service", ""),
         ("Ignore Battery Optimizations", ""),
         ("android_open_battery_optimizations_tip", ""),
