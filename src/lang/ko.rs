@@ -348,7 +348,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Follow System", "시스템 설정에따름"),
         ("Enable hardware codec", "하드웨어 코덱 활성화"),
         ("Unlock Security Settings", "보안 설정 잠금 해제"),
-        ("Enable audio", "오디오 활성화"),
+        ("Enable Audio", "오디오 활성화"),
         ("Unlock Network Settings", "네트워크 설정 잠금 해제"),
         ("Server", "서버"),
         ("Direct IP Access", "다이렉트 IP 연결"),
