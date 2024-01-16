@@ -19,7 +19,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Recent sessions", "최근 세션"),
         ("Address book", "세션 주소록"),
         ("Confirmation", "확인"),
-        ("TCP tunneling", "TCP 터널링"),
+        ("TCP Tunneling", "TCP 터널링"),
         ("Remove", "삭제"),
         ("Refresh random password", "랜덤 비밀번호 변경"),
         ("Set your own password", "개인 비밀번호 설정"),
